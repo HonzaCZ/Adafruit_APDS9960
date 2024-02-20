@@ -349,6 +349,17 @@ void Adafruit_APDS9960::setGestureProximityThreshold(uint8_t thresh) {
 }
 
 /*!
+ *  @brief  Sets gesture sensor threshold
+ *  @param  thresh_enter
+ *  @param  thresh_exit
+ *          Threshold
+ */
+void Adafruit_APDS9960::setGestureProximityThreshold(uint8_t thresh_enter, uint8_t thresh_exit) {
+  this->write8(APDS9960_GPENTH, thresh_enter);
+  this->write8(APDS9960_GEXTH, thresh_exit);
+}
+
+/*!
  *  @brief  Sets gesture sensor offset
  *  @param  offset_up
  *          Up offset

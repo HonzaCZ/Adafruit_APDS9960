@@ -202,6 +202,7 @@ public:
   void setGestureFIFOThreshold(uint8_t thresh);
   void setGestureGain(uint8_t gain);
   void setGestureProximityThreshold(uint8_t thresh);
+  void setGestureProximityThreshold(uint8_t thresh_enter, uint8_t thresh_exit);
   void setGestureOffset(uint8_t offset_up, uint8_t offset_down,
                         uint8_t offset_left, uint8_t offset_right);
   uint8_t readGesture();
